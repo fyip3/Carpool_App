@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarpoolBuddy">
         <activity
+            android:name=".Guide"
+            android:exported="true" />
+        <activity
+            android:name=".FreeMoney"
+            android:exported="true" />
+        <activity
             android:name=".AddVehicleActivity"
             android:exported="true" />
         <activity

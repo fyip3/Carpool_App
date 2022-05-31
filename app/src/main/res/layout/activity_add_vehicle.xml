@@ -6,4 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".AddVehicleActivity">
 
+    <TextView
+        android:id="@+id/mo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:text="Model"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mode"
+        app:layout_constraintEnd_toStartOf="@+id/mode" />
+
+    <EditText
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/mode"
+        app:layout_constraintTop_toBottomOf="@+id/mode" />
+
+    <TextView
+        android:id="@+id/se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Seats"
+        app:layout_constraintBaseline_toBaselineOf="@+id/seat"
+        app:layout_constraintEnd_toStartOf="@+id/seat" />
+
+    <TextView
+        android:id="@+id/pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:text="Price"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pric"
+        app:layout_constraintEnd_toStartOf="@+id/pric" />
+
+    <EditText
+        android:id="@+id/pric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/seat"
+        app:layout_constraintTop_toBottomOf="@+id/seat" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="addVehicle"
+        android:text="add"
+        app:layout_constraintStart_toStartOf="@+id/pric"
+        app:layout_constraintTop_toBottomOf="@+id/pric" />
+
+    <Spinner
+        android:id="@+id/typee"
+        android:layout_width="207dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="69dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/mode"
+        app:layout_constraintEnd_toEndOf="@+id/mode" />
+
+    <EditText
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="46dp"
+        android:text="Vehicle"
+        app:layout_constraintBottom_toTopOf="@+id/mo"
+        app:layout_constraintEnd_toStartOf="@+id/typee" />
 </androidx.constraintlayout.widget.ConstraintLayout>
